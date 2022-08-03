@@ -86,7 +86,7 @@ abstract contract Proxy {
      */
     function _beforeFallback() internal virtual {}
 }
-contract IndigenaNFTMarketplace is Proxy {
+contract IndigenaNFT is Proxy {
     
     // Storage position of the address of the current implementation
     bytes32 private constant implementationPosition = 

@@ -10,7 +10,7 @@ module.exports = {
     hardhat: {
     },
     rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/process.env.Alchemy_API",
+      url:process.env.Alchemy_API,
       accounts: [process.env.REACT_RINKEBY_PRIVATE_KEY ]
     }
   },

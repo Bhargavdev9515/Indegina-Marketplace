@@ -12,14 +12,14 @@ async function main() {
    
         const ContractAddress = await indigenaNFT.deploy()
 
-    console.log("Oku Group Contract", ContractAddress.address);
+    console.log("Indigena NFT Market", ContractAddress.address);
 
-    const ProxyContract= await hre.ethers.getContractFactory("IndigenaNFTMarketplace")
-    const ProxyAddress =await ProxyContract.deploy()
-    console.log("proxy Contract Address",ProxyAddress.address);
+    // const ProxyContract= await hre.ethers.getContractFactory("IndigenaNFT")
+    // const ProxyAddress =await ProxyContract.deploy()
+    // console.log("proxy Contract Address",ProxyAddress.address);
 
     const Trade =await hre.ethers.getContractFactory("Trade")
-    const TradeAddress=await Trade.deploy(10,20);
+    const TradeAddress=await Trade.deploy(10);
     console.log("IndigenaTradeContract",TradeAddress.address)
 
 }
